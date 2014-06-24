@@ -1,0 +1,16 @@
+<% IF session.user%>
+<a href="/monitor/logout" title="Close <% session.user%>" session>Logout</a>
+<%ELSE%>
+<center>
+
+<form id='form_body' action='/monitor/login' method='post'>
+请使用测试用户：test/test<br>
+<label for="username">username:</label><br>
+<input class="input" type="text"  name="username" id="username" value=""/><br>
+<label for="password">password:</label><br>
+<input class="input" type="password" mexlength="20" name="password" id="password" value=""/><br>
+<input  type="submit" name="submit" value="Login" />
+<input  name="path" type="hidden" value="/monitor" id="path">
+
+</center>
+<%END%>

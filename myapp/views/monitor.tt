@@ -1,0 +1,123 @@
+<head>
+    <script>
+        function mm(){
+            var i=document.frm1.select1.selectedIndex;
+            var address=document.frm1.select1.options[i].value;
+            document.location.href=address;
+        }
+    </script>
+</head>
+<% IF session.user%>
+
+<center>
+
+  <form name="frm1">
+        <select name="select1" onchange="mm()">
+            <option selected>请选择环境</option>
+            <option value="<% request.uri_base %>/monitor/api">API环境</option>
+            <option value="<% request.uri_base %>/monitor/nuat">NUAT环境</option>
+            <option value="<% request.uri_base %>/monitor/nsht">NSHT环境</option>
+            <option value="<% request.uri_base %>/monitor/nst">NST环境</option>
+            <option value="<% request.uri_base %>/monitor/member">Member环境</option>
+            <option value="<% request.uri_base %>/monitor/uat">UAT环境</option>
+            <option value="<% request.uri_base %>/monitor/bjt">BJT环境</option>
+            <option value="<% request.uri_base %>/monitor/neuit">NEU-IT环境</option>
+            <option value="<% request.uri_base %>/monitor/st">ST环境</option>
+            <option value="<% request.uri_base %>/monitor/tcsit">TCS-IT环境</option>
+            <option value="<% request.uri_base %>/monitor/tcsdev">TCS-DEV环境</option>
+        </select>
+    </form>
+<table class = "mytable" > <tr>
+<th  scope="col" width="5%" rowspan="2">环境</th>
+<th  scope="col" width="8%" rowspan="2" >IP</th>
+
+
+
+
+
+<th scope="col"  width="10%" colspan="4" >CPU监控</th>
+<th scope="col"  width="15%" colspan="4" >磁盘空间</th>
+</tr>
+<tr>
+
+
+
+
+
+
+
+<th scope="col"  width="4%">user</th>
+<th scope="col"  width="4%">sys</th>
+<th scope="col"  width="2%">idle</th>
+<th scope="col"  width="2%">iowait</th>
+ 
+<th scope="col"  width="15%" >挂载目录</th>
+<th scope="col"  width="5%">totle</th>
+<th scope="col"  width="5%">Free</th>
+<th scope="col"  width="5%">%Used</th>
+</tr>
+<tbody>
+
+<% FOREACH k IN table %>
+<tr>
+
+<td rowspan="<%k.row%>">
+  <%k.env%>
+</td>
+<td rowspan="<%k.row%>" >
+  <%k.ip%>
+</td>
+
+
+
+
+     <% FOREACH memory IN k.memory%>
+     <td rowspan="<%k.row%>">
+    <%memory%>%
+    </td>
+    <%END%>
+
+
+     <% FOREACH cpu IN k.cpu%>
+  <td rowspan="<%k.row%>">   
+    <%cpu%>
+    </td>
+    <%END%>
+
+
+
+
+
+
+    <% FOREACH fdisk IN k.disk%>
+
+ <td >
+
+    <%fdisk%>
+
+  </td>
+
+    <% IF  loop.count % 4 == 0 %>
+</tr>
+<%END%>
+    <%END%>
+    
+
+
+<%END%>
+
+
+
+
+
+
+</tbody>
+</table>
+
+</center>
+
+<%ELSE%>
+<center>
+<%table%>
+</center>
+<%END%>

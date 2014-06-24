@@ -1,0 +1,41 @@
+<SOFTPKG NAME="Template-Toolkit" VERSION="2.25">
+  <TITLE>Template-Toolkit</TITLE>
+  <ABSTRACT>comprehensive template processing system</ABSTRACT>
+  <AUTHOR>Andy Wardley (abw@wardley.org)</AUTHOR>
+  <IMPLEMENTATION>
+    <DEPENDENCY NAME="Scalar-List-Utils" VERSION="1,23,0,0" />
+    <ARCHITECTURE NAME="MSWin32-x86-multi-thread" />
+    <CODEBASE HREF="Template-Toolkit-2.25-PPM56.tar.gz" />
+  </IMPLEMENTATION>
+  <IMPLEMENTATION>
+    <DEPENDENCY NAME="Scalar-List-Utils" VERSION="1,23,0,0" />
+    <ARCHITECTURE NAME="MSWin32-x86-multi-thread-5.8" />
+    <CODEBASE HREF="Template-Toolkit-2.25-PPM58.tar.gz" />
+  </IMPLEMENTATION>
+  <IMPLEMENTATION>
+    <DEPENDENCY NAME="Scalar-List-Utils" VERSION="1,23,0,0" />
+    <ARCHITECTURE NAME="MSWin32-x86-multi-thread-5.10" />
+    <CODEBASE HREF="Template-Toolkit-2.25-PPM510.tar.gz" />
+  </IMPLEMENTATION>
+  <IMPLEMENTATION>
+    <DEPENDENCY NAME="Scalar-List-Utils" VERSION="1,23,0,0" />
+    <ARCHITECTURE NAME="MSWin32-x86-multi-thread-5.12" />
+    <CODEBASE HREF="Template-Toolkit-2.25-PPM512.tar.gz" />
+  </IMPLEMENTATION>
+  <IMPLEMENTATION>
+    <DEPENDENCY NAME="Scalar-List-Utils" VERSION="1,23,0,0" />
+    <ARCHITECTURE NAME="MSWin32-x86-multi-thread-5.14" />
+    <CODEBASE HREF="Template-Toolkit-2.25-PPM514.tar.gz" />
+  </IMPLEMENTATION>
+  <IMPLEMENTATION>
+    <DEPENDENCY NAME="Scalar-List-Utils" VERSION="1,23,0,0" />
+    <ARCHITECTURE NAME="MSWin32-x86-multi-thread-5.16" />
+    <CODEBASE HREF="Template-Toolkit-2.25-PPM516.tar.gz" />
+  </IMPLEMENTATION>
+  <IMPLEMENTATION>
+    <DEPENDENCY NAME="Scalar-List-Utils" VERSION="1,23,0,0" />
+    <ARCHITECTURE NAME="MSWin32-x86-multi-thread-64int-5.18" />
+    <CODEBASE HREF="Template-Toolkit-2.25-PPM518.tar.gz" />
+  </IMPLEMENTATION>
+</SOFTPKG>
+

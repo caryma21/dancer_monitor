@@ -1,0 +1,27 @@
+<head>
+    <script>
+        function mm(){
+            var i=document.frm1.select1.selectedIndex;
+            var address=document.frm1.select1.options[i].value;
+            document.location.href=address;
+        }
+    </script>
+</head>
+<body>
+    <form name="frm1">
+        <select name="select1" onchange="mm()">
+            <option selected>请选择环境</option>
+
+            <option value="http://200.31.214.178:9000/env/monitor/nuat">NUAT环境</option>
+            <option value="http://200.31.214.178:9000/env/monitor/nsht">NSHT环境</option>
+            <option value="http://200.31.214.178:9000/env/monitor/nst">NST环境</option>
+            <option value="http://200.31.214.178:9000/env/monitor/member">Member环境</option>
+            <option value="http://200.31.214.178:9000/env/monitor/uat">UAT环境</option>
+            <option value="http://200.31.214.178:9000/env/monitor/bjt">BJT环境</option>
+            <option value="http://200.31.214.178:9000/env/monitor/neuit">NEU-IT环境</option>
+            <option value="http://200.31.214.178:9000/env/monitor/st">ST环境</option>
+            <option value="http://200.31.214.178:9000/env/monitor/tcsit">TCS-IT环境</option>
+            <option value="http://200.31.214.178:9000/env/monitor/tcsdev">TCS-DEV环境</option>
+        </select>
+    </form>
+</body>

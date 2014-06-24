@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Public style*/
+a:link 							{ text-decoration: none; }
+a:visited 						{ text-decoration: none; }
+a:hover 						{ text-decoration: none; }
+*								{ margin: 0; padding: 0; }
+body,div,table,ul			{ font-size:14px;margin:0; padding:0; } 
+#nav							{ padding:0; margin:0 auto; list-style:none; height:32px;  font-family: "microso YaHei"; font-size:12px;
+                                  background:transparent url(/images/nav_bg.gif) repeat-x; z-index:500;  width:1000px; } 
+.block							{ display:inline-block; }
+#nav .noborder					{ border:none; }
+
+/*one  menu*/
+ul								{ list-style: none; }
+ul.menus li 					{ float:left; zoom: 1; line-height:25px; height:26px;}
+ul.menus li img					{ float:left;}
+ul.menus .notice				{ text-align: center; width:120px; padding-top:4px;}
+ul.menus li a                   { text-decoration: none; display: block; color: #fff; }
+ul.menus li:last-child a        { border-right: none; } /* Doesn't work in IE */
+ul.menus li.hover,
+ul.menus li:hover               { position: relative; }
+ul.menus li.hover a             { color: #D4D4D4;background:transparent url(/images/nav_hlight.jpg) 5px -5px no-repeat; }
+
+/*three menu*/
+ul.menus ul ul
+{
+    left: 100%;
+    top:0;
+    display: none
+    }
+ul.menus li:hover ul
+{
+display: block;
+position: absolute;
+}
+
+
+/*two menu*/
+ul.menus ul
+{ display: none; position:absolute; top:30px; left: 0; }
+ul.menus ul li
+{ border-bottom: 1px dotted #84B5F3; float:left; top:0px; display:inline-block; }	  
+ul.menus ul li a
+{ width: 100%; } /* IE 6 & 7 Needs Inline Block */
+
+
+/*batch*/
+ul.menus li ul.batch_sub{ width:140px; background:#2657A6;  text-indent:-63px; }
+ul.menus li ul.batch_sub li a{ width:140px; background:#2657A6; display:block; }
+ul.menus li ul.batch_sub :hover{ background:#4172BF; }
+ul.menus li ul.batch_sub a.icon{ background: url(/images/arrow.gif) 113px 8px no-repeat; }
+ul.menus li ul.batch_sub a.icon:hover{ background:#4172BF url(/images/arrow_over.gif) 113px 8px no-repeat; }
+ul.menus li ul.batch_sub li .sub02,ul.menus li ul.batch_sub li .sub02 a{ background:#4172BF;width:90px;  }
+ul.menus li ul.batch_sub li .sub02 :hover{ background:#6291D7; }
+ul.menus li ul.batch_sub li .sub02{ left:130px; }
+
+/*stream*/
+ul.menus li ul.stream_sub{ width:140px;  background:#2657A6;  text-indent:-63px; }
+ul.menus li ul.stream_sub li a{ width:140px; background:#2657A6; }
+ul.menus li ul.stream_sub :hover{ background:#4172BF; }
+ul.menus li ul.stream_sub a.icon{ background:url(/images/arrow.gif) 145px 8px no-repeat; }
+ul.menus li ul.stream_sub a.icon:hover{ background:#4172BF url(/images/arrow_over.gif) 145px 8px no-repeat; }
+ul.menus li ul.stream_sub li .sub02,ul.menus li ul.stream_sub li .sub02 a{ background:#4172BF; width:160px; }
+ul.menus li ul.stream_sub li .sub02 :hover{ background:#6291D7;}
+ul.menus li ul.stream_sub li .sub02{ left:160px; }
+
+/*holiday*/
+ul.menus li ul.holiday_sub{ width:140px; background:#2657A6;  text-indent:-63px; }
+ul.menus li ul.holiday_sub li a{ width:140px; background:#2657A6; }
+ul.menus li ul.holiday_sub :hover{ background:#4172BF; }
+ul.menus li ul.holiday_sub a.icon{ background:url(/images/arrow.gif) 105px 8px no-repeat; }
+ul.menus li ul.holiday_sub a.icon:hover{ background:#4172BF url(/images/arrow_over.gif) 105px 8px no-repeat; }
+ul.menus li ul.holiday_sub li .sub02,ul.menus li ul.holiday_sub li .sub02 a{ background:#4172BF; width:130px; }
+ul.menus li ul.holiday_sub li .sub02 :hover{ background:#6291D7; }
+ul.menus li ul.holiday_sub li .sub02{ left:125px; }
+
+/*time*/
+ul.menus li ul.time_sub{ width:140px;  background:#2657A6;  text-indent:-63px; }
+ul.menus li ul.time_sub li a{ width:140px; background:#2657A6; }
+ul.menus li ul.time_sub :hover{ background:#4172BF; }
+ul.menus li ul.time_sub a.icon{ background:url(/images/arrow.gif) 155px 8px no-repeat; }
+ul.menus li ul.time_sub a.icon:hover{ background:#4172BF url(/images/arrow_over.gif) 155px 8px no-repeat; }
+ul.menus li ul.time_sub li .sub02,ul.menus li ul.time_sub li .sub02 a{ background:#4172BF; width:175px; }
+ul.menus li ul.time_sub li .sub02 :hover{ background:#6291D7;}
+ul.menus li ul.time_sub li .sub02{ left:170px; }
+
+/*notice*/
+ul.menus li ul.notice_sub{ width:140px; background:#2657A6;  text-indent:-63px; }
+ul.menus li ul.notice_sub li a{ width:140px; background:#2657A6; }
+ul.menus li ul.notice_sub :hover{ background:#4172BF; }
+ul.menus li ul.notice_sub li.icon { background:#2657A6 url(/images/arrow.gif) 20px 8px no-repeat; }
+ul.menus li ul.notice_sub li.icon :hover { background:#4172BF url(/images/arrow_over.gif) 100px 8px no-repeat; }
+ul.menus li ul.notice_sub li .sub02{ background:#4172BF; }
+ul.menus li ul.notice_sub li .sub02 :hover{ background:#6291D7; }

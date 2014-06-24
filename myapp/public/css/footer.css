@@ -1,0 +1,13 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body {
+	padding-right: 0px; padding-left: 0px; font-size: 12px; background: #fff; padding-bottom: 0px; margin: 0px; color: #000; padding-top: 0px; font-family: "宋体"; text-align: left;
+}
+
+.footbg{background:transparent url(../images/bg-footer.gif) repeat-x scroll 0px 0px;  margin-top:5px;}
+
+.footeng{ color:#969696; font-family:Arial, Helvetica, sans-serif; font-size:11px;height:25px;text-align:center;}
+.footcp{ color:#686868;text-align:center;}
+.footicp{ color:#898989; text-decoration:none;}
+

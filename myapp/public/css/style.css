@@ -1,0 +1,299 @@
+
+body {
+margin: 0;
+margin-bottom: 25px;
+padding: 0;
+background-color: #ddd;
+background-image: url("/images/perldancer-bg.jpg");
+background-repeat: no-repeat;
+background-position: top left;
+
+font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
+font-size: 13px;
+color: #333;
+}
+
+h1 {
+font-size: 28px;
+color: #000;
+}
+
+a  {color: #03c}
+a:hover {
+background-color: #03c;
+color: white;
+text-decoration: none;
+}
+
+#page {
+background-color: #ddd;
+width: 750px;
+margin: auto;
+margin-left: auto;
+padding-left: 0px;
+margin-right: auto;
+}
+
+#content {
+background-color: white;
+border: 3px solid #aaa;
+border-top: none;
+padding: 25px;
+width: 500px;
+}
+
+#sidebar {
+float: right;
+width: 175px;
+}
+
+#header, #about, #getting-started {
+padding-left: 75px;
+padding-right: 30px;
+}
+
+.flhead{ width:1000px;  margin:0 auto; height:70px; overflow:hidden;
+background: transparent url(/images/top_bg.jpg) no-repeat scroll 0px 0px;
+}
+
+
+#header {
+background-image: url("/images/perldancer.jpg");
+background-repeat: no-repeat;
+background-position: top left;
+height: 64px;
+}
+#header h1, #header h2 {margin: 0}
+#header h2 {
+color: #888;
+font-weight: normal;
+font-size: 16px;
+}
+
+#about h3 {
+margin: 0;
+margin-bottom: 10px;
+font-size: 14px;
+}
+
+#about-content {
+background-color: #ffd;
+border: 1px solid #fc0;
+margin-left: -11px;
+}
+#about-content table {
+margin-top: 10px;
+margin-bottom: 10px;
+font-size: 11px;
+border-collapse: collapse;
+}
+#about-content td {
+padding: 10px;
+padding-top: 3px;
+padding-bottom: 3px;
+}
+#about-content td.name  {color: #555}
+#about-content td.value {color: #000}
+
+#about-content.failure {
+background-color: #fcc;
+border: 1px solid #f00;
+}
+#about-content.failure p {
+margin: 0;
+padding: 10px;
+}
+
+#getting-started {
+border-top: 1px solid #ccc;
+margin-top: 25px;
+padding-top: 15px;
+}
+#getting-started h1 {
+margin: 0;
+font-size: 20px;
+}
+#getting-started h2 {
+margin: 0;
+font-size: 14px;
+font-weight: normal;
+color: #333;
+margin-bottom: 25px;
+}
+#getting-started ol {
+margin-left: 0;
+padding-left: 0;
+}
+#getting-started li {
+font-size: 18px;
+color: #888;
+margin-bottom: 25px;
+}
+#getting-started li h2 {
+margin: 0;
+font-weight: normal;
+font-size: 18px;
+color: #333;
+}
+#getting-started li p {
+color: #555;
+font-size: 13px;
+}
+
+#search {
+margin: 0;
+padding-top: 10px;
+padding-bottom: 10px;
+font-size: 11px;
+}
+#search input {
+font-size: 11px;
+margin: 2px;
+}
+#search-text {width: 170px}
+
+#sidebar ul {
+margin-left: 0;
+padding-left: 0;
+}
+#sidebar ul h3 {
+margin-top: 25px;
+font-size: 16px;
+padding-bottom: 10px;
+border-bottom: 1px solid #ccc;
+}
+#sidebar li {
+list-style-type: none;
+}
+#sidebar ul.links li {
+margin-bottom: 5px;
+}
+
+h1, h2, h3, h4, h5 {
+font-family: sans-serif;
+margin: 1.2em 0 0.6em 0;
+}
+
+p {
+line-height: 1.5em;
+margin: 1.6em 0;
+}
+
+code, tt {
+    font-family: 'Andale Mono', Monaco, 'Liberation Mono', 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', monospace;
+}
+
+#footer {
+clear: both;
+padding-top: 2em;
+text-align: center;
+padding-right: 160px;
+font-family: sans-serif;
+font-size: 10px;
+}
+
+.mytable_sod {
+width:1000px;
+padding: 1;
+margin: 0;
+border-collapse: collapse;
+font: "Microsoft YaHei";
+border: 1px solid rgb(26, 213, 190);
+ font-weight: 100;
+}
+
+
+
+.mytable {
+width:1000px;
+padding: 1;
+margin: 0;
+border-collapse: collapse;
+font: "Microsoft YaHei";
+border: 1px solid rgb(26, 213, 190);
+font-weight: 100;
+
+}
+
+caption {
+padding: 0 0 5px 0;
+width: 700px; 
+font: Arial, "宋体","Times New Roman",italic 12px "Trebuchet MS", Verdana, Helvetica, sans-serif;
+text-align: left;
+}
+
+th {
+border-collapse: collapse;
+font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+color: #4f6b72;
+border:1px solid rgb(26, 213, 190);
+text-align:left;
+padding: 6px 6px 6px 12px;
+background: #CAE8EA url(images/bg_header.jpg) no-repeat;
+text-align: center;
+}
+
+th.nobg {
+border-top: 0;
+border-left: 0;
+border-right: 1px solid #C1DAD7;
+background: none;
+}
+
+td {
+border-right: 1px solid rgb(26, 213, 190);
+border-bottom: 1px solid rgb(26, 213, 190);
+font: "微软雅黑",Arial;
+font-size:14px;
+padding: 6px 6px 6px 12px;
+color: #4f6b72;
+}
+
+
+td.alt {
+background: #F5FAFA;
+color: #797268;
+}
+
+th.spec {
+border-left: 1px solid #C1DAD7;
+border-top: 0;
+background: #fff url(images/bullet1.gif) no-repeat;
+font: bold 10px "Times New Roman";
+}
+
+th.specalt {
+border-left: 1px solid #C1DAD7;
+border-top: 0;
+background: #f5fafa url(images/bullet2.gif) no-repeat;
+font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+color: #797268;
+}
+
+
+#status_success {
+ color:    #00CC00;
+ font-weight: 800;
+}
+
+#status_fail{
+    color: red;
+    font-weight: 800;
+}
+.jindu_g{position: relative;width:200px;border: 1px solid #B1D632;padding: 1px;}
+.jindu_g div{display: block;position: relative;
+background: green; color: #333333;
+height: 20px;line-height: 20px;
+}
+.jindu_g div span{position: absolute;width: 200px;
+text-align: center;font-weight: bold;
+}
+
+.jindu_r{position: relative;width:200px;border: 1px solid #B1D632;padding: 1px;}
+.jindu_r div{display: block;position: relative;
+background: red; color: #333333;
+height: 20px;line-height: 20px;
+}
+.jindu_r div span{position: absolute;width: 200px;
+text-align: center;font-weight: bold;
+}

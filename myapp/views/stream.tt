@@ -1,0 +1,46 @@
+
+<center>
+
+<table class="mytable">
+<tr>
+<th  scope="col" width="8%">环境</th>
+<th scope="col"  width="10%">在线库捕获</th>
+<th scope="col"  width="10%">在线库传递</th>
+<th scope="col"  width="10%">在线库状态</th>
+<th scope="col"  width="10%">备份库状态</th>
+<th  scope="col" width="18%">在线库产生时间</th>
+<th scope="col"  width="18%">备份库应用时间</th>
+<th  scope="col" width="6%">时差</th>
+<th scope="col"  width="8%">同步状态</th>
+<th scope="col"  >错误数</th>
+</tr>
+
+
+<tbody><tr>
+
+
+
+<% FOREACH  k IN table%>
+
+
+
+
+<% FOREACH g IN k%>
+
+   <td><%g%></td>
+ 
+
+   <%END%>
+
+<%IF loop.count % 10 ==0 %>
+</tr>
+<%END%>
+
+<%END%>
+
+
+   
+
+</tbody>
+</table>
+</center>

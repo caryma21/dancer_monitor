@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=<% settings.charset %>" />
+<meta http-equiv="refresh" content="180"/>
+<title>点检系统</title>
+<link rel="stylesheet" href="<% request.uri_base %>/css/style.css" />
+		<div class="flhead" ></div>
+<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+
+
+
+<link  rel="stylesheet" href="<% request.uri_base %>/css/menu.css" />
+<!--	<script type="text/javascript" language="javascript" src="js/jquery.min.js">
+</script>
+	<script type="text/javascript" language="javascript" src="js/jquery.menus.js">
+</script>
+-->
+</head>
+<body>
+<div id="nav">
+			<ul class="menus">
+			
+				<li><a href="<% request.uri_base %>"><img src="/images/nav_index.gif" width="83" height="32" border="0"/></a></li>
+
+				<li class="notice">				
+					<a  href="<% request.uri_base %>/batch/sod" style="color: #fff">批处理检查</a>
+					<ul class="batch_sub">
+    					<li><a href="<% request.uri_base %>/batch/ST">ST环境</a></li>
+    					<li><a href="<% request.uri_base %>/batch/NST">NST环境</a></li>
+    					<li><a href="<% request.uri_base %>/batch/SHT">SHT环境</a></li>
+    					<li><a href="<% request.uri_base %>/batch/API">API环境</a></li>
+    					<li><a href="<% request.uri_base %>/batch/UAT">UAT环境</a></li>
+    					<li><a href="<% request.uri_base %>/batch/NSHT">NSHT环境</a></li>
+    					<li><a href="<% request.uri_base %>/batch/NUAT">NUAT环境</a></li>
+    					<li><a href="<% request.uri_base %>/batch/MEMBER">Memb环境</a></li>
+													
+					</ul>
+				</li>
+
+				
+
+				<li><img src="images/tpnav_line_1.gif" width="1" height="32"/></li>
+				
+
+				<li class="notice">
+					<a  href="<% request.uri_base %>/stream" style="color: #fff">Stream同步</a>
+					
+				</li>
+
+
+				
+				
+				<li><img src="images/tpnav_line_1.gif" width="1" height="32"/></li>
+
+				<li class="notice">
+					<a href="<% request.uri_base %>/monitor/login" style="color: #fff">登录</a>
+				</li>
+				<li><img src="images/tpnav_line_1.gif" width="1" height="32"/></li>
+
+				<li class="notice">
+					<a href="<% request.uri_base %>/monitor" style="color: #fff">监控</a>
+				</li>
+				
+			</ul>
+                        
+		</div>	
+<% content %>
+<div id="footer">
+Powered by <a href="http://perldancer.org/">Dancer</a> <% dancer_version %>
+</div>
+</body>
+</html>
